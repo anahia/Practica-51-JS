@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 51-->
+
+<head>
+    <title>Practica 51</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vecti = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+        var aqui = 0;
+        var f;
+        do {
+            if (vecti[aqui] == 2) {
+                vecti.splice(aqui, 1, 1, 1);
+            }
+            aqui++;
+        } while (aqui < vecti.length);
+        for (f = 0; f < vecti.length; f++) {
+            document.write(vecti[f]);
+            document.write('<br>');
+        }
+    </script>
+
+</body>
+
+</html>
